@@ -25,39 +25,30 @@
 </head>
 <body>
     <header>
-        <div class="header-padding">
-            <nav  class="flex ">
-                <ul class="flex">
-                    <li>
-                        <a href="#">
-                            <img src="assets/media/logo.png" alt="brand logo">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <strong class="strong">JOURNEY</strong>
-                        </a>
-                    </li>
-                </ul>
+        <div class="header-padding flex">
+            <a class="flex" href="#">
+                <img src="assets/media/logo.png" alt="brand logo">
+                <strong class="strong">JOURNEY</strong>
+            </a>
+            <nav>
                 <ul class="flex nav-menu">
                     <li>
                         <a class="home-color" href="#">Home</a>
                     </li>
                     <li>
-                        <a href="#">Top Destinations</a>
+                        <a href="#destination">Top Destinations</a>
                     </li>
                     <li>
-                        <a href="#">Recommended Places</a>
+                        <a href="#recommended">Recommended Places</a>
                     </li>
                     <li>
-                        <a href="#">Contact Us</a>
+                        <a href="#contact">Contact Us</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <section>
             <div class="hero container">
                 <article class="text-center">
                     <h1>
@@ -66,15 +57,15 @@
                     <img src="assets/media/dots-3.png" alt="dots">
                     <P>
                         We assits you to choose the best.
-                    </P>
-                    <a href="#"><i class="fas fa-chevron-circle-down"></i></a>
+                    <p>
+                    <a href="#" class="circle"><i class="fas fa-chevron-down"></i></a>
                 </article>
                 <form action="" class="form ">
                     <fieldset >
                         <div class="flex">
                             <div class="flex-48">
                                 <label for="Choose your Destination" class="nav-menu"> Choose your Destination</label>
-                                <input type="text" placeholder="Type your Destination..." class="form-control">
+                                <input type="text" placeholder="Type your Destination..." class="form-control" required>
                             </div>
                             <div class="flex flex-48">
                                 <div>
@@ -106,22 +97,21 @@
                         <div class="flex margin-text-form">
                             <div class="nav-menu">
                                 <label for="">Check In Date </label>
-                                <input type="text" placeholder="Check In" class="form-control">
+                                <input type="date" placeholder="Check In" class="form-control">
                             </div>
                             <div class="nav-menu">
                                 <label for="">Check Out Date </label>
-                                <input type="text" placeholder="Check Out" class="form-control">
+                                <input type="date" placeholder="Check Out" class="form-control">
                             </div>
-                            <div class="flex-48">
+                            <div>
                                 <input class="btn btn-primary" type="submit" value="CHECK AVAILABILITY" >
                             </div>
                         </div>
                     </fieldset>
                 </form>
             </div>
-        </section>
         <section>
-            <article class="text-align-center  container info-background">
+            <article class="text-align-center container   info-background">
                 <h2 class="strong font-weight-text">
                     YOUR <strong class="strong">JOURNEY</strong> IS OUR PRIORITY
                 </h2>
@@ -134,7 +124,7 @@
         </section>
         <!-- EUROPE SECTION -->
 
-        <section>
+        <section id="destination">
             <div class="container flex back-color relative">
                 <div class="flex-50 font-size-zero">
                     <img class="image-width" src="assets/media/tm-img-01.jpg" alt="Europe">
@@ -189,43 +179,43 @@
         </section>
         <section>
             <div class="container map-color flex">
-                <div class="map-padding">
-                    <img  src="assets/media/north-america.png" alt="">
+                <div class="color-map grow">
+                    <img class="font-size-zero"  src="assets/media/north-america.png" alt="">
                     <h4>
                         NORTH AMERICA
                     </h4>
                 </div>
-                <div class="color-map">
+                <div class="color-map  grow">
                     <img src="assets/media/south-america.png" alt="">
                     <h4>
                         SOUTH AMERICA
                     </h4>
                 </div>
-                <div class="color-map">
-                    <img src="assets/media/europe.png" alt="">
+                <div class="color-map  grow">
+                    <img class="font-size-zero" src="assets/media/europe.png" alt="">
                     <h4>
                         EUROPE
                     </h4>
                 </div>
-                <div class="color-map color-map-asia height-100">
-                    <img class="asia-padding" src="assets/media/asia.png" alt="">
+                <div class="color-map color-map-asia grow">
+                    <img src="assets/media/asia.png" alt="">
                     <h4>
                         ASIA
                     </h4>
                 </div>
-                <div class="color-map">
+                <div class="color-map  grow">
                     <img src="assets/media/africa.png" alt="">
                     <h4>
                         AFRICA
                     </h4>
                 </div>
-                <div class="color-map">
+                <div class="color-map  grow">
                     <img src="assets/media/australia.png" alt="">
                     <h4>
                         AUSTRALIA
                     </h4>
                 </div>
-                <div class="map-padding-antartica color-map">
+                <div class="map-padding-antartica color-map  grow">
                     <img src="assets/media/antartica.png" alt="">
                     <h4>
                         ANTARTICA
@@ -236,7 +226,7 @@
 
         <!-- RESORT SECTION -->
 
-        <section>
+        <section id="recommended">
             <div class="container back-color padding-top-resort">
                 <div class="flex  resort resort-1">
                     <div class="flex-25 font-size-zero">
@@ -348,16 +338,16 @@
             </div>
         </section>
         <section>
-            <div class="container relative">
+            <div class="container relative font-size-zero">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3375.919684030994!2d76.35140991453672!3d32.206394781148006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b530e24726e0d%3A0x71ff0cae0784712d!2sAltCampus%20Services%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1618416720494!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 <form action="" class="form-1 absolute-form">
                     <fieldset>
                         <div class="flex">
-                            <input type="text" placeholder="Name" class="form-control-1 width-form">
+                            <input type="name" placeholder="Name" class="form-control-1 width-form">
                             <input type="email" placeholder="Email" class="form-control-1 width-form">
                         </div> 
                         <input type="subject" placeholder="Subject" class="form-control-1">
-                        <textarea class="form-control-1 height-textarea">Message</textarea>
+                        <textarea name="message" rows="6" class="form-control-1 height-textarea" placeholder="message"></textarea>
                         <input type="submit" class="btn btn-primary" value="SEND MESSAGE NOW">
                     </fieldset>
                 </form>
@@ -367,7 +357,7 @@
 
     <!-- FOOTER -->
 
-    <footer >
+    <footer id="contact" >
         <div class="container back-color-footer text-align-center">
             <small>
                 Copyright&copy; 2020 Your Company .Designed by Template Mo
