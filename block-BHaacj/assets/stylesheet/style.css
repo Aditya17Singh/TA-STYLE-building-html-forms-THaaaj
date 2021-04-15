@@ -1,0 +1,377 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CUSTOM STYLES */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    
+
+}
+:root{
+    --primary:#69C6BA;
+    --secondary:#C66995;
+}
+/* FLEX */
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-48{
+    flex: 0 1 48%;
+}
+.flex-50{
+    flex: 0 1 50%;
+}
+.flex-40{
+    flex: 0 1 40%
+}
+.flex-25{
+    flex: 0 1 25%;
+}
+/* MY RESET */
+a{
+    text-decoration: none;
+    color: black;
+}
+.header-padding{
+    padding: 30px 160px;
+}
+.text-align-center{
+    text-align: center;
+}
+.paragraph{
+    font-size: 11px;
+    letter-spacing: 0;
+    margin: 12px 0px;
+    padding-right: 40px;
+    color: whitesmoke;
+}
+.image-width{
+    width: 100%;
+}
+.font-size-zero{
+    font-size: 0;
+}
+.info-heading{
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+}
+.info-article{
+    background-color: var(--primary);
+    padding: 40px 20px;
+}
+.relative{
+    position: relative;
+}
+.justify-content{
+    justify-content: flex-end;
+}
+/* HEADER */
+
+.nav-menu {
+    font-size: 14px;
+    font-weight: 700;
+}
+.nav-menu li{
+    margin-right: 30px;
+}
+.strong{
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+}
+/* BUTTON */
+.btn{
+    display: inline-block;
+    font-size: 15px;
+    padding: 10px 20px;
+    color: white;
+    border: 0;
+    width: 100%;
+    outline: 0;
+    transition: box-shadow 200ms ease-in-out;
+}
+.btn:hover{
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+.btn-primary{
+    background-color: var(--primary); 
+}
+.btn-secondary{
+    width: 26%;
+}
+/* HERO SECTION */
+
+.hero{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../media/banner.jpg) no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    
+}
+main{
+    background-color: silver;
+}
+footer{
+    background-color: silver;
+}
+.form-control{
+    display: block;
+    border: 0;
+    outline: 0;
+    margin-top: 8px;
+    padding-left: 10px;
+    border: 1px solid transparent;
+}
+.form-control:focus{
+    border-color: var(--primary);
+}
+.form-control::placeholder{
+    color: gray;
+}
+
+
+label{
+    display: block;
+}
+.form{
+    background-color: white;
+    padding: 20px 50px;
+    width: 70%;
+    margin: 0 auto; 
+}
+.margin-text-form{
+    margin-top: 90px;
+}
+.text-center{
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 50px
+}
+.text-center h1 {
+    color: white;
+    font-size: 35px;
+    font-weight: 500;
+}
+.text-center p{
+    color: white;
+    font-weight: 300;
+}
+.text-center a{
+    
+    
+}
+.info-background{
+    background-color: #d2d2d2;
+    padding: 20px 0px;
+}
+.font-weight-text{
+    font-weight: 300;
+}
+.para-padding{
+    padding: 0 100px;
+    color: gray;
+    margin: 20px 0;
+}
+.back-color{
+    background-color: white;
+}
+.absolute{
+    position: absolute;
+    left: 45%;
+    right: 5%;
+}
+.btn-color{
+    background-color: white;
+    color: var(--primary);
+    font-size: 10px;
+}
+.absolute-1{
+    position: absolute;
+    right: 45%;
+    left: 5%;
+}
+.btn-color-2{
+    color: var(--secondary);
+}
+.article-color{
+    background-color: var(--secondary);
+}
+.circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    display: inline-block;
+    line-height: 35px;
+    color: white;
+    
+}
+
+/* MAP SECTION */
+.map-color{
+    background-color: var(--primary);
+    text-align: center;
+    
+}
+.grow{
+    padding: 20px 0;
+}
+.map-padding{
+    padding-left: 20px;
+    color: whitesmoke;
+    font-size: 13px;
+}
+.color-map{
+    color: white;
+    font-size: 12px;
+}
+
+.color-map-asia{
+    background-color: var(--secondary);  
+}
+.map-color .grow:hover{
+    background-color: var(--secondary);
+}
+.grow{
+    flex: 1 1 auto;
+}
+/* RESORT SECTION */
+
+.background-resort{
+    background-color: var(--primary);
+}
+.resort{
+    width: 75%;
+    margin: 0 auto; 
+    border: 1px solid gray;  
+}
+.padding-top-resort{
+    padding-top: 50px;
+}
+.margin-top-resort{
+    margin-top: 50px;
+}
+.flex-25{
+    flex: 0 1 26%;
+}
+.resort-head{
+    font-size: 20px;
+}
+.color-resort-para{
+    color: black;
+}
+.image-width-1{
+    width: 80%;
+}
+.margin-resort{
+    margin: 0px 0px;
+}
+.btn-margin{
+    margin-top: 20px;
+    padding-bottom: 50px;
+}
+.strong-resort{
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+}
+.heading-resort-1{
+    font-size: 11px;
+    padding-right: 45px;
+}
+.back-color-footer{
+    background-color: var(--primary);
+    margin-top: 0px;
+    padding: 30px 0;
+    color: white;
+    font-size: 10px;
+}
+.form-1{
+    background-color: white;
+    padding: 20px 30px;
+    width: 30%;
+}
+.form-control-1{
+    width: 100%;
+    border: 0;
+    background-color: #e6e6e6;
+    height: 40px;
+    margin-bottom: 10px;
+}
+.absolute-form{
+    position: absolute;
+    bottom: 20%;
+    left: 56%;
+}
+.width-form{
+    width: 47%;
+}
+.height-textarea{
+    height: 120px;
+    color: #8C949C;
+}
+.home-color{
+    color: var(--primary);
+}
+.nav-menu a:hover{
+    color: var(--primary);
+}
